@@ -1,0 +1,13 @@
+[package]
+name = "poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.86", features = ["backtrace"] }
+clap = { version = "4.5.13", features = ["derive"] }
+humantime = "2.1.0"
+libc = "0.2.155"
+memmap = "0.7.0"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["chrono", "time"] }
