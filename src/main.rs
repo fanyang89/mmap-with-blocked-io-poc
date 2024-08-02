@@ -1,5 +1,6 @@
 use core::time;
 use std::io::Write;
+#[cfg(target_os = "linux")]
 use std::os::fd::AsRawFd;
 use std::{fs::File, path::PathBuf, thread::sleep, time::Instant};
 
